@@ -1,8 +1,8 @@
 opencv-python
 parallel-execute
 sounddevice
-logging
 pyautogui
 easygui
-win32process
+pynput
+pywin32
 winregistry
