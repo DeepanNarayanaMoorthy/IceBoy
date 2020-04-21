@@ -1,7 +1,7 @@
 import time, socket, sys
 import ctypes  # An included library with Python install.
 import os
-import win32process
+import win32process, easygui
 import subprocess
 from pexecute.thread import ThreadLoom
 from pynput.keyboard import Key, Listener
@@ -99,12 +99,12 @@ def fun2():
                 pass
         if(messageb=='sendfile'):
             connectionb.send(messageb.encode())
-            root = tkinter.Tk()
-            root.withdraw() 
-            fname = tkinter.filedialog.askopenfilename(filetypes = (("Template files", "*.type"), ("All files", "*")))
-##            dname = easygui.enterbox("ENTER THE ADDRESS OF THE DIRECTORY")
-##            fname = easygui.enterbox("ENTER THE NAME OF THE FILE")
-##            fname=dname+'/'+fname
+##            root = tkinter.Tk()
+##            root.withdraw() 
+##            fname = tkinter.filedialog.askopenfilename(filetypes = (("Template files", "*.type"), ("All files", "*")))
+            dname = easygui.enterbox("ENTER THE ADDRESS OF THE DIRECTORY")
+            fname = easygui.enterbox("ENTER THE NAME OF THE FILE")
+            fname=dname+'/'+fname
             fname=list(fname)
             fname=['//' if x=='/' else x for x in fname]
             str1 = " " 
