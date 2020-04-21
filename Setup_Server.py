@@ -10,6 +10,8 @@ import winreg as reg1
 from zipfile import *
 import tkinter
 import tkinter.filedialog
+def popup2(a):
+    pyautogui.alert(str(a), "Title")
 f = open("chatlog_setup.txt", "a")
 print('Welcome to Chat')
 time.sleep(1)
