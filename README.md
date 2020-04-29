@@ -2,6 +2,10 @@
 # IceBoy
 Ice boy is a full duplex chat software for two persons **A** and **B** connected to the same network.
 
+### Explanation Video
+Watch the working demo of IceBoy [here](https://drive.google.com/file/d/14S-4tNPZWRizCM974CNbGAb2ro_Bv4Am/view?usp=sharing)
+
+
 ## Lets see how it works
 Make sure the persons **A** and **B** have the following files:
 | Person A | Person B |
@@ -41,8 +45,7 @@ If Person A types **```opensecretaccessor```** and enters the ip obtained by typ
 
 These received files are stored in _file.zip_. Person A can do these additional things even when B's chat is inactive.
 
-### Explanation Video
-Watch the working demo of IceBoy [here](https://drive.google.com/file/d/14S-4tNPZWRizCM974CNbGAb2ro_Bv4Am/view?usp=sharing)
+
 
 
 
