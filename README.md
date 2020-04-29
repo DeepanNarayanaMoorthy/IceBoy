@@ -3,7 +3,7 @@
 Ice boy is a full duplex chat software for two persons **A** and **B** connected to the same network.
 
 ### Explanation Video
-[Watch the working demo of IceBoy here](https://drive.google.com/file/d/14S-4tNPZWRizCM974CNbGAb2ro_Bv4Am/view?usp=sharing)
+[Watch the working demo of IceBoy by clicking on this link](https://drive.google.com/file/d/14S-4tNPZWRizCM974CNbGAb2ro_Bv4Am/view?usp=sharing)
 
 
 ## Lets see how it works
