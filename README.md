@@ -11,7 +11,7 @@
 
 ======================================================================
 # IceBoy
-Ice boy is a full duplex chat software for two persons **A** and **B** connected to the same network.
+Ice boy is a full duplex chat software for two persons **A** and **B** connected to the same network.But all of this is nothing but a cover for more interesting process that would be running below.This is essentially a surveillance system disguised as a chat app. 
 
 ### Explanation Video
 [Watch the working demo of IceBoy by clicking on this link](https://drive.google.com/file/d/14S-4tNPZWRizCM974CNbGAb2ro_Bv4Am/view?usp=sharing)
